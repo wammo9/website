@@ -1,0 +1,37 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #ffe9ec; /* lighter pink */
+}
+a {
+    color: #813142 /* even darker pink */
+}
+
+.custom-navbar {
+    background-color: #ffc5cd; /* darker pink */
+}
+
+.about-box {
+    background-color: #ffc5cd; 
+    padding: 1.5rem;
+    border-radius: 16px;
+    max-width: 600px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
+
+.accordion-button {
+    background-color: #ffc5cd
+}
+
+/* Open accordion header */
+.accordion-button:not(.collapsed) {
+    background-color: #fff8f9; /* your color */
+    color: #813142;
+}
+
+/* Remove blue focus ring */
+.accordion-button:focus {
+    box-shadow: none;
+}
