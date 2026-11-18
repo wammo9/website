@@ -1,37 +1,158 @@
+/* ---------- Design tokens (pink palette shared with the resume PDF) ---------- */
+:root {
+    --rose-50:  #fff8f9;
+    --rose-100: #ffe9ec;
+    --rose-200: #ffc5cd;
+    --rose-300: #f4a3b0;
+    --rose-700: #813142;
+    --rose-900: #4a1b27;
+    --ink:      #2b1d21;
+    --muted:    #6b5258;
+    --line:     #f0cfd5;
+    --radius:   14px;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    background-color: #ffe9ec; /* lighter pink */
+    font-family: var(--sans);
+    background-color: var(--rose-100);
+    color: var(--ink);
+    line-height: 1.65;
 }
-a {
-    color: #813142 /* even darker pink */
-}
+h1, h2, h3, h4, .navbar-brand { font-family: var(--serif); color: var(--rose-900); }
+a { color: var(--rose-700); }
+a:hover { color: var(--rose-900); }
+:focus-visible { outline: 3px solid var(--rose-700); outline-offset: 2px; }
 
+/* ---------- Navbar ---------- */
 .custom-navbar {
-    background-color: #ffc5cd; /* darker pink */
+    background-color: var(--rose-200);
+    border-bottom: 1px solid var(--rose-300);
+}
+.custom-navbar .navbar-brand { font-weight: 700; font-size: 1.3rem; color: var(--rose-900); }
+.custom-navbar .nav-link { color: var(--rose-900); font-weight: 500; padding: .5rem .9rem; border-radius: 8px; }
+.custom-navbar .nav-link:hover { background: rgba(255,255,255,.5); }
+.custom-navbar .nav-link.active { background: var(--rose-50); color: var(--rose-700); }
+.custom-navbar .navbar-toggler { border-color: var(--rose-700); }
+
+/* ---------- Layout ---------- */
+.page { max-width: 1040px; margin: 0 auto; padding: 0 1.25rem; }
+.section { padding: 2.5rem 0 .5rem; }
+.section-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: .4rem;
+    border-bottom: 2px solid var(--rose-200);
+}
+.eyebrow {
+    text-transform: uppercase; letter-spacing: .12em; font-size: .78rem;
+    font-weight: 600; color: var(--rose-700); margin-bottom: .25rem;
 }
 
-.about-box {
-    background-color: #ffc5cd; 
-    padding: 1.5rem;
-    border-radius: 16px;
-    max-width: 600px;
+/* ---------- Hero ---------- */
+.hero { padding: 2.5rem 0 1rem; }
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); line-height: 1.1; margin-bottom: .5rem; }
+.hero .lead { color: var(--muted); font-size: 1.15rem; }
+.hero-photo { width: 100%; height: auto; display: block; }
 
-    font-family: Georgia, "Times New Roman", serif;
-    color: #1f1f1f;
-    line-height: 1.6;
+/* ---------- Buttons ---------- */
+.btn-rose {
+    background: var(--rose-700); color: #fff; border: 2px solid var(--rose-700);
+    border-radius: 999px; padding: .5rem 1.3rem; font-weight: 600;
+}
+.btn-rose:hover { background: var(--rose-900); border-color: var(--rose-900); color: #fff; }
+.btn-rose-outline {
+    background: transparent; color: var(--rose-700); border: 2px solid var(--rose-700);
+    border-radius: 999px; padding: .5rem 1.3rem; font-weight: 600;
+}
+.btn-rose-outline:hover { background: var(--rose-700); color: #fff; }
+
+/* ---------- Cards ---------- */
+.card-soft {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.4rem;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(129, 49, 66, .06);
+}
+.card-soft h3 { font-size: 1.2rem; margin-bottom: .4rem; }
+.card-soft .meta { color: var(--muted); font-size: .88rem; margin-bottom: .6rem; }
+.card-soft p:last-child { margin-bottom: 0; }
+.card-soft img.cover {
+    width: 100%; height: 220px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;
+}
+.focus-icon {
+    width: 46px; height: 46px; border-radius: 12px; background: var(--rose-100);
+    color: var(--rose-700); display: grid; place-items: center; font-size: 1.2rem; margin-bottom: .8rem;
 }
 
-.accordion-button {
-    background-color: #ffc5cd
+.tag {
+    display: inline-block; background: var(--rose-100); color: var(--rose-700);
+    border: 1px solid var(--rose-200); border-radius: 999px;
+    font-size: .76rem; font-weight: 600; padding: .1rem .65rem; margin: 0 .3rem .3rem 0;
+}
+.badge-place {
+    display: inline-block; background: var(--rose-700); color: #fff; border-radius: 999px;
+    font-size: .76rem; font-weight: 600; padding: .1rem .65rem; margin-bottom: .5rem;
 }
 
-/* Open accordion header */
-.accordion-button:not(.collapsed) {
-    background-color: #fff8f9; /* your color */
-    color: #813142;
-}
+/* ---------- Project feature rows ---------- */
+.project-row { display: grid; grid-template-columns: 280px 1fr; gap: 1.5rem; align-items: start; }
+.project-row img { width: 100%; height: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; }
+.project-row ul { padding-left: 1.1rem; margin-bottom: .6rem; }
+@media (max-width: 700px) { .project-row { grid-template-columns: 1fr; } }
 
-/* Remove blue focus ring */
-.accordion-button:focus {
-    box-shadow: none;
+/* ---------- Skills ---------- */
+.skill-row { display: flex; gap: 1rem; padding: .55rem 0; border-bottom: 1px dashed var(--line); }
+.skill-row:last-child { border-bottom: 0; }
+.skill-row dt { flex: 0 0 140px; color: var(--rose-700); font-weight: 600; }
+.skill-row dd { margin: 0; }
+
+/* ---------- Resume page ---------- */
+.resume-sheet {
+    background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 2rem 2.2rem; box-shadow: 0 2px 10px rgba(129, 49, 66, .06);
 }
+.resume-sheet h2 {
+    font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: var(--rose-700);
+    border-bottom: 2px solid var(--rose-200); padding-bottom: .2rem; margin: 1.6rem 0 .8rem;
+}
+.resume-sheet h2:first-of-type { margin-top: 0; }
+.resume-item { margin-bottom: 1rem; }
+.resume-item .head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-weight: 600; }
+.resume-item .head .when { color: var(--muted); font-weight: 500; white-space: nowrap; }
+.resume-item ul { margin: .25rem 0 0; padding-left: 1.2rem; }
+
+/* ---------- Interests ---------- */
+.interest-card img.cover { height: 180px; }
+.interest-card .mini { width: 44px; height: 44px; float: right; margin: 0 0 .5rem .75rem; }
+
+/* ---------- Tree strip + footer ---------- */
+.trees { display: flex; justify-content: center; align-items: flex-end; gap: 1.5rem; padding: 3rem 0 0; flex-wrap: wrap; }
+.trees img { width: 120px; height: 120px; object-fit: contain; }
+.site-footer { background: var(--rose-200); border-top: 1px solid var(--rose-300); margin-top: 0; padding: 1.5rem 0; color: var(--rose-900); }
+.site-footer a { color: var(--rose-900); font-size: 1.5rem; margin: 0 .6rem; }
+.site-footer a:hover { color: var(--rose-700); }
+.site-footer small { display: block; margin-top: .4rem; color: var(--rose-700); }
+
+/* Circular profile photo */
+.hero-photo {
+    aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 28%;
+    border-radius: 50%; border: 6px solid var(--rose-200);
+    box-shadow: 0 4px 18px rgba(129, 49, 66, .18);
+    max-width: 340px; margin: 0 auto;
+}
+.project-row img.contain { object-fit: contain; background: #fff; border: 1px solid var(--line); }
+.interest-card img.cover[src$="irishdance.jpg"] { object-position: 50% 35%; }
+
+/* ---------- Projects accordion ---------- */
+.accordion { --bs-accordion-border-color: var(--line); --bs-accordion-border-radius: var(--radius); --bs-accordion-inner-border-radius: var(--radius); }
+.accordion-button { background: var(--rose-200); color: var(--rose-900); font-family: var(--sans); line-height: 1.3; }
+.accordion-button:not(.collapsed) { background: var(--rose-50); color: var(--rose-700); box-shadow: inset 0 -1px 0 var(--line); }
+.accordion-button:focus { box-shadow: 0 0 0 3px rgba(129, 49, 66, .3); border-color: var(--rose-700); }
+.accordion-button::after { filter: hue-rotate(300deg) saturate(.6); }
+.accordion-body { background: #fff; }
+.project-row.no-img { display: block; }
+.project-row.no-img ul { margin-top: 0; }

@@ -3,123 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous"
-    >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-    crossorigin="anonymous">
-    </script>
+    <title>E. Wallis McGuire | Embedded & Software Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of E. Wallis McGuire, ECE and Computer Science student at CU Boulder focused on embedded systems, robotics, and software.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="submission/resources/style.css">
     <script src="https://kit.fontawesome.com/088c27f93f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar custom-navbar sticky-top">
-        <div class="container-fluid">
-            <!-- titles -->
-            <div class="d-flex align-items-center">
-                <a class="navbar-brand" href="#">E. Wallis McGuire</a>
-                <ul class="navbar-nav d-flex flex-row gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link d-flex flex-column align-items-center" 
-                        href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex flex-column align-items-center" 
-                        href="./submission/views/hobbies.html">
-                        <i class="fa-solid fa-heart"></i>
-                        Hobbies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex flex-column align-items-center" 
-                        href="./submission/views/projects.html">
-                        <i class="fa-solid fa-file"></i>
-                        Projects</a>
-                    </li>
+    <nav class="navbar navbar-expand-md custom-navbar sticky-top">
+        <div class="container-fluid px-3 px-md-4">
+            <a class="navbar-brand" href="index.html">E. Wallis McGuire</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto ms-md-3">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submission/views/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submission/views/resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submission/views/hobbies.html">Interests</a></li>
                 </ul>
+                <a class="navbar-brand ms-md-auto me-0" href="index.html" aria-label="Home">
+                    <img src="submission/resources/img/marshall.gif" alt="Animal Crossing villager icon" width="55" height="35">
+                </a>
             </div>
-            <!-- logo -->
-            <a class="navbar-brand ms-auto" href="index.html">
-              <img src="./submission/resources/img/marshall.gif" alt="logo" width="55" height="35">
-            </a>
-          </div>
+        </div>
     </nav>
 
-    <!-- image + description -->
-    <div class="container-fluid mt-5">
-        <div class="d-flex align-items-center gap-4">
-        <img 
-            src="./submission/resources/img/heartframe.png" 
-            alt="Me" 
-            class="float-start profile-img"
-            width="600" 
-            height="350"
-        >
-        <div class="about-box">
-            <p class="text-center fs-1">₊˚ ✧ ──⊱About Me⊰── ✧ ₊˚</p>
-            <p class="fs-6">  Hello! My name is Wallis McGuire, an Electrical & Computer Engineering and Computer Science 
-                    undergraduate student at CU Boulder with a caffeine addiction. I am a software enthusiast with an avid interest in Embedded 
-                    Software. I love video games, especially Nintendo games, and I have a passion for mobile games, both the 
-                    creation and the enjoyment. In my spare time, I teach Calculus and Engineering courses. In the evenings,
-                    I am kicking butt doing judo. And when I want to relax and reboot, I spend time reading and petting my Golden
-                    Retriever, Ginger.
-            </p>
-            <p><a class="link-opacity-25-hover" href="./submission/views/resume.html">Click</a> to view resume.</p>
-      </div>
-  
-    </div>
-    </div>
 
-    <!-- some cutie patootie little graphics -->
-    <div class="container-fluid mt-5">
-        <div class="d-flex justify-content-center gap-4">
-            <img 
-            src="./submission/resources/img/apple.webp" 
-            alt="apple tree" 
-            class="img-fluid"
-            >
-            <img 
-            src="./submission/resources/img/orange.gif" 
-            alt="orange tree" 
-            class="img-fluid"
-            >
-            <img 
-            src="./submission/resources/img/pear.gif" 
-            alt="pear tree" 
-            class="img-fluid"
-            >
-            <img 
-            src="./submission/resources/img/cherry.gif" 
-            alt="cherry tree" 
-            class="img-fluid"
-            >
-        </div>
-    </div>
-  
-    <!-- footer -->
-    <footer class="sticky-bottom mt-5 py-3 bg-light">
-        <div class="container-fluid text-center">
-            <div class="d-flex justify-content-center gap-3">
-                <a href="https://github.com/wammo9">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="www.linkedin.com/in/elizabeth-wallis-mcguire-engineering">
-                  <i class="fa-brands fa-square-linkedin"></i></a>
-                <a href="https://www.instagram.com/walli._.pop/">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="mailto:mcguire.elizabeth999@gmail.com">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
+    <main class="page">
+        <section class="hero">
+            <div class="row align-items-center g-4">
+                <div class="col-md-5 order-md-2">
+                    <img class="hero-photo" src="submission/resources/img/profile.jpg" alt="Portrait of Wallis McGuire" width="400" height="400">
+                </div>
+                <div class="col-md-7 order-md-1">
+                    <p class="eyebrow">Electrical &amp; Computer Engineering + Computer Science</p>
+                    <h1>Wallis McGuire</h1>
+                    <p class="lead">Embedded systems and software engineering student at CU Boulder (B.S., expected May 2027),
+                    building hardware-constrained software, robotics, and full-stack tools.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a class="btn btn-rose" href="submission/views/projects.html">View Projects</a>
+                        <a class="btn btn-rose-outline" href="submission/views/resume.html">Resume</a>
+                        <a class="btn btn-rose-outline" href="mailto:mcguire.wall.e@gmail.com"><i class="fa-solid fa-envelope me-1"></i> Contact</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>I'm an Electrical &amp; Computer Engineering and Computer Science undergraduate at CU Boulder with a deep interest in
+            embedded software, where code meets real hardware. I'm currently the Software GUI Lead and Customer Relations Manager on a
+            NASA SpaceGrant capstone building a distributed sensing platform, and I serve as Head Fellow for CU Engineering Fellows.</p>
+            <p>Outside of engineering, I'm a Nintendo and mobile-game fan (playing and building them), I teach calculus and engineering
+            courses, train judo in the evenings, and recharge by reading and spending time with my Golden Retriever, Ginger.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Focus Areas</h2>
+            <div class="row g-3">
+                <div class="col-md-4"><div class="card-soft">
+                    <div class="focus-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Embedded Systems</h3>
+                    <p>STM32 firmware in C, SPI and GPIO peripherals, sensor integration, and power-budget analysis.</p>
+                </div></div>
+                <div class="col-md-4"><div class="card-soft">
+                    <div class="focus-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Robotics &amp; Circuits</h3>
+                    <p>Power distribution, signal conditioning, and control circuitry, modeled in LTSpice and tested on hardware.</p>
+                </div></div>
+                <div class="col-md-4"><div class="card-soft">
+                    <div class="focus-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Software &amp; Game Dev</h3>
+                    <p>Full-stack data tools, GUI development, and mobile apps in Python, Java, Dart, and JavaScript.</p>
+                </div></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row g-3">
+                <div class="col-md-4"><div class="card-soft">
+                    <h3>NASA SpaceGrant GeoSat</h3>
+                    <p class="meta">Capstone &middot; Aug 2026 &ndash; Present</p>
+                    <p>Battery-powered distributed sensing platform (STM32, sensors, GPS, RF) for terrestrial and lunar research.</p>
+                    <span class="tag">STM32</span><span class="tag">GUI</span><span class="tag">Systems</span>
+                </div></div>
+                <div class="col-md-4"><div class="card-soft">
+                    <h3>Real-Time Embedded Battleship</h3>
+                    <p class="meta">STM32 &middot; C &middot; Apr 2026</p>
+                    <p>Game state, collision detection, and rendering routines for a hardware-constrained display and input system.</p>
+                    <span class="tag">C</span><span class="tag">SPI</span><span class="tag">GPIO</span>
+                </div></div>
+                <div class="col-md-4"><div class="card-soft">
+                    <h3>Data Modeling Web App</h3>
+                    <p class="meta">Full stack &middot; Apr 2026</p>
+                    <p>Upload, model, and analyze custom datasets through an interactive interface backed by a database.</p>
+                    <span class="tag">Full stack</span><span class="tag">SQL</span>
+                    <p class="mt-2 mb-0"><a href="https://github.com/wammo9/CSCI3308_DataModeling">View on GitHub &rarr;</a></p>
+                </div></div>
+            </div>
+            <p class="mt-3"><a href="submission/views/projects.html">See all projects &rarr;</a></p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="card-soft">
+                <dl class="mb-0">
+                    <div class="skill-row"><dt>Email</dt><dd><a href="mailto:mcguire.wall.e@gmail.com">mcguire.wall.e@gmail.com</a></dd></div>
+                    <div class="skill-row"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/elizabeth-wallis-mcguire-engineering">linkedin.com/in/elizabeth-wallis-mcguire-engineering</a></dd></div>
+                    <div class="skill-row"><dt>GitHub</dt><dd><a href="https://github.com/wammo9">github.com/wammo9</a></dd></div>
+                    <div class="skill-row"><dt>Location</dt><dd>Superior, CO</dd></div>
+                    <div class="skill-row"><dt>Resume</dt><dd><a href="submission/views/resume.html">View online</a> &middot; <a href="submission/resources/Resume_web_dwnld.pdf" download>Download PDF</a></dd></div>
+                </dl>
+            </div>
+        </section>
+    <div class="trees" aria-hidden="true">
+        <img src="submission/resources/img/apple.webp" alt="">
+        <img src="submission/resources/img/orange.gif" alt="">
+        <img src="submission/resources/img/pear.gif" alt="">
+        <img src="submission/resources/img/cherry.gif" alt="">
+    </div>
+    </main>
+
+
+    <footer class="site-footer text-center">
+        <div class="page">
+            <div>
+                <a href="https://github.com/wammo9" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/elizabeth-wallis-mcguire-engineering" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:mcguire.wall.e@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <small>&copy; 2026 E. Wallis McGuire &middot; Superior, CO &middot; mcguire.wall.e@gmail.com</small>
         </div>
     </footer>
-    
 </body>
 </html>

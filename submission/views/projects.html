@@ -3,192 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-        crossorigin="anonymous"
-    >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-    crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="../resources/style.css">
+    <title>Projects | E. Wallis McGuire</title>
+    <meta name="description" content="Embedded systems, robotics, and software projects by E. Wallis McGuire.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../submission/resources/style.css">
     <script src="https://kit.fontawesome.com/088c27f93f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- navbar -->
-  <nav class="navbar custom-navbar">
-      <div class="container-fluid">
-          <!-- titles -->
-          <div class="d-flex align-items-center">
-              <a class="navbar-brand" href="#">E. Wallis McGuire</a>
-              <ul class="navbar-nav d-flex flex-row gap-3">
-                  <li class="nav-item">
-                      <a class="nav-link d-flex flex-column align-items-center" 
-                      href="../../index.html">
-                      <i class="fa-solid fa-house"></i>
-                      Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link d-flex flex-column align-items-center" 
-                      href="hobbies.html">
-                      <i class="fa-solid fa-heart"></i>
-                      Hobbies</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link d-flex flex-column align-items-center" 
-                      href="projects.html">
-                      <i class="fa-solid fa-file"></i>
-                      Projects</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- logo -->
-          <a class="navbar-brand ms-auto" href="../../index.html">
-            <img src="../resources/img/marshall.gif" alt="logo" width="55" height="35">
-          </a>
+    <nav class="navbar navbar-expand-md custom-navbar sticky-top">
+        <div class="container-fluid px-3 px-md-4">
+            <a class="navbar-brand" href="../../index.html">E. Wallis McGuire</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto ms-md-3">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../submission/views/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../submission/views/resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../submission/views/hobbies.html">Interests</a></li>
+                </ul>
+                <a class="navbar-brand ms-md-auto me-0" href="../../index.html" aria-label="Home">
+                    <img src="../../submission/resources/img/marshall.gif" alt="Animal Crossing villager icon" width="55" height="35">
+                </a>
+            </div>
         </div>
-  </nav>
+    </nav>
 
-  <!-- title -->
-  <p class="text-start fs-1 m-4">
-    ─ ⊹⊱ Recent Projects ⊰⊹ ─
-  </p>
 
-  <!-- accordian -->
-  <div class="accordion accordion-flush" id="projects">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#flush-collapseOne"
-          aria-expanded="true"
-          aria-controls="flush-collapseOne">
-          <img
-            src="../resources/img/goldie.webp"
-            alt="robot"
-            class="float-start"
-            width="40"
-            height="40"
-          >
-          <strong>2023 CU Boulder Electrical Engineering Design Expo</strong>
-        </button>
-      </h2>
-      <div id="flush-collapseOne"
-           class="accordion-collapse collapse show"
-           data-bs-parent="#projects">
-        <div class="accordion-body clearfix">
-          <img
-            src="../resources/img/HVFlauncher.png"
-            alt="launcher"
-            class="float-start m-2"
-            width="300"
-            height="300"
-          >
-          <p><strong>1st place</strong></p>
-          <p>
-            Created electronic joystick controlled launching mechanism with a team
-            of engineers for children with limited mobility, allowing them to
-            participate in Nerf battles. Served as Lead System Designer and
-            programmed the joystick and launching software.
-          </p>
-        </div>
-      </div>
+    <main class="page">
+        <section class="section">
+            <p class="eyebrow">Selected work</p>
+            <h1 class="section-title">Projects</h1>
+            <div class="accordion" id="projects">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#proj0" aria-expanded="true" aria-controls="proj0">
+                            <span><strong>NASA SpaceGrant GeoSat Capstone</strong><br><small class="text-muted">Software GUI Lead &amp; Customer Relations Manager &middot; Aug 2026 &ndash; Present</small></span>
+                        </button>
+                    </h2>
+                    <div id="proj0" class="accordion-collapse collapse show" data-bs-parent="#projects">
+                        <div class="accordion-body"><div class="project-row no-img"><div><ul><li>Developing a battery-powered distributed sensing platform integrating an STM32 microcontroller, environmental and motion sensors, GPS, onboard storage, and RF communication for terrestrial and lunar research.</li><li>Translating sponsor needs into system requirements and use cases; supporting component selection, power-budget analysis, prototype testing, and coordination across a six-member team.</li></ul><span class="tag">STM32</span><span class="tag">GPS</span><span class="tag">RF</span><span class="tag">Power budget</span><span class="tag">GUI</span></div></div></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#proj1" aria-expanded="false" aria-controls="proj1">
+                            <span><strong>Real-Time Embedded Battleship System</strong><br><small class="text-muted">STM32 &middot; C &middot; Apr 2026</small></span>
+                        </button>
+                    </h2>
+                    <div id="proj1" class="accordion-collapse collapse" data-bs-parent="#projects">
+                        <div class="accordion-body"><div class="project-row"><img src="../resources/img/battleship.jpg" alt="Battleship game grid with ship pieces and control buttons on the STM32 touchscreen display"><div><ul><li>Designed 2D data structures for game state and collision detection, plus efficient rendering routines for a hardware-constrained UI.</li><li>Integrated SPI communication and GPIO-controlled display and input peripherals.</li></ul><span class="tag">C</span><span class="tag">STM32</span><span class="tag">SPI</span><span class="tag">GPIO</span></div></div></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#proj2" aria-expanded="false" aria-controls="proj2">
+                            <span><strong>ModelScope: Data Modeling Web Application</strong><br><small class="text-muted">Full-stack development &middot; Apr 2026</small></span>
+                        </button>
+                    </h2>
+                    <div id="proj2" class="accordion-collapse collapse" data-bs-parent="#projects">
+                        <div class="accordion-body"><div class="project-row"><img class="contain" src="../resources/img/modelscope.jpg" alt="ModelScope 3D PCA scatter plot"><div><ul><li>Built a full-stack application that lets users upload, model, and analyze custom datasets through an interactive interface, including PCA with 2D/3D visualization.</li><li>Implemented backend data processing and database storage and retrieval for structured user data.</li></ul><span class="tag">React</span><span class="tag">Express</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><p class="mt-2 mb-0"><a href="https://github.com/wammo9/CSCI3308_DataModeling"><i class="fa-brands fa-github me-1"></i>View source on GitHub</a></p></div></div></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#proj3" aria-expanded="false" aria-controls="proj3">
+                            <span><strong>Autonomous Robot with End-to-End Circuit Design</strong><br><small class="text-muted">Group Leader &middot; Electronic Design Lab &middot; May 2025</small></span>
+                        </button>
+                    </h2>
+                    <div id="proj3" class="accordion-collapse collapse" data-bs-parent="#projects">
+                        <div class="accordion-body"><div class="project-row"><img src="../resources/img/robot_web.jpg" alt="Autonomous robot with breadboard circuitry and an ultrasonic sensor"><div><ul><li>Built an autonomous robot over a semester: power distribution, signal conditioning, and control circuitry.</li><li>Modeled circuits in LTSpice, then built and tested breadboard implementations; authored lab reports.</li><li>Programmed on an Arduino Nano platform.</li></ul><span class="tag">LTSpice</span><span class="tag">Arduino</span><span class="tag">Analog circuits</span><span class="tag">Leadership</span></div></div></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#proj4" aria-expanded="false" aria-controls="proj4">
+                            <span><strong>Accessible Joystick-Controlled Foam Launcher</strong><br><small class="text-muted">ECEN 1400 Projects Expo &middot; Lead System Designer &middot; 2023</small></span>
+                        </button>
+                    </h2>
+                    <div id="proj4" class="accordion-collapse collapse" data-bs-parent="#projects">
+                        <div class="accordion-body"><div class="project-row"><img src="../resources/img/HVFlauncher_crop.jpg" alt="Dual-motor foam launcher prototype on a wooden frame"><div><span class="badge-place"><i class="fa-solid fa-trophy me-1"></i> 1st place</span><ul><li>Designed an electronic, joystick-controlled launching mechanism so children with limited mobility can take part in foam-dart battles.</li><li>Led system design and programmed the joystick and launch control software.</li></ul><span class="tag">Embedded control</span><span class="tag">Motors</span><span class="tag">Accessibility</span></div></div></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#proj5" aria-expanded="false" aria-controls="proj5">
+                            <span><strong>DIDDIT</strong><br><small class="text-muted">Co-Founder &amp; Front-End Developer</small></span>
+                        </button>
+                    </h2>
+                    <div id="proj5" class="accordion-collapse collapse" data-bs-parent="#projects">
+                        <div class="accordion-body"><div class="project-row"><img src="../resources/img/dogphone.gif" alt="Illustration of a dog on a phone"><div><ul><li>Developed the user interface of a student assignment-management mobile app in Dart, focused on clarity and usability.</li><li>Presented the prototype to potential investors.</li></ul><span class="tag">Dart</span><span class="tag">Mobile</span><span class="tag">UI/UX</span></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4">More code on <a href="https://github.com/wammo9">GitHub</a>.</p>
+        </section>
+    <div class="trees" aria-hidden="true">
+        <img src="../../submission/resources/img/apple.webp" alt="">
+        <img src="../../submission/resources/img/orange.gif" alt="">
+        <img src="../../submission/resources/img/pear.gif" alt="">
+        <img src="../../submission/resources/img/cherry.gif" alt="">
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#flush-collapseTwo"
-          aria-expanded="false"
-          aria-controls="flush-collapseTwo">
-          <img
-            src="../resources/img/frog.webp"
-            alt="robot"
-            class="float-start"
-            width="40"
-            height="40"
-          >
-          <strong>2025 Autonomous Robot</strong>
-        </button>
-      </h2>
-      <div id="flush-collapseTwo"
-           class="accordion-collapse collapse"
-           data-bs-parent="#projects">
-        <div class="accordion-body clearfix">
-          <img
-            src="../resources/img/robot.png"
-            alt="robot"
-            class="float-start m-2"
-            width="300"
-            height="300"
-          >
-          <p><strong>Group Leader</strong></p>
-          <p>
-            Built an autonomous robot from scratch over an entire semester,
-            designed and tested complex circuits, and authored lab reports.
-            Programmed using Arduino Nano Uno.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#flush-collapseThree"
-          aria-expanded="false"
-          aria-controls="flush-collapseThree">
-          <img
-            src="../resources/img/cat.webp"
-            alt="robot"
-            class="float-start"
-            width="40"
-            height="40"
-          >
-          <strong>DIDDIT</strong>
-        </button>
-      </h2>
-      <div id="flush-collapseThree"
-           class="accordion-collapse collapse"
-           data-bs-parent="#projects">
-        <div class="accordion-body clearfix">
-          <img
-            src="../resources/img/dogphone.gif"
-            alt="robot"
-            class="float-start m-2"
-            width="300"
-            height="300"
-          >
-          <p><strong>Front-end Developer</strong></p>
-          <p>
-            Developed the user interface for a student task-tracking mobile app
-            using Dart, focusing on clarity and usability.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </main>
 
-  <!-- footer -->
-  <footer class="fixed-bottom mt-5 py-3 bg-light">
-    <div class="container text-center">
-        <div class="d-flex justify-content-center gap-3">
-            <a href="https://github.com/wammo9">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="www.linkedin.com/in/elizabeth-wallis-mcguire-engineering">
-              <i class="fa-brands fa-square-linkedin"></i></a>
-            <a href="https://www.instagram.com/walli._.pop/">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="mailto:mcguire.elizabeth999@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
-    </div>
-  </footer>
 
+    <footer class="site-footer text-center">
+        <div class="page">
+            <div>
+                <a href="https://github.com/wammo9" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/elizabeth-wallis-mcguire-engineering" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:mcguire.wall.e@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <small>&copy; 2026 E. Wallis McGuire &middot; Superior, CO &middot; mcguire.wall.e@gmail.com</small>
+        </div>
+    </footer>
 </body>
 </html>
